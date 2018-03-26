@@ -1,0 +1,116 @@
+////////////////////
+//// Framework /////
+////////////////////
+*
+  box-sizing: border-box
+  
+body
+  margin: 0
+
+////////////
+// resets //
+////////////
+.reset
+  margin: 0
+  text-decoration: none
+  color: inherit
+  border: 0
+  font-weight: inherit
+  
+/////////////////
+// positioning //
+/////////////////
+.absolute
+  position: absolute
+
+.relative
+  position: relative
+  
+.fixed
+  position: fixed
+
+//////////
+// flex //
+//////////
+.fl
+  display: flex
+
+.fl-center
+.fl-center-x
+  justify-content: center
+
+.fl-center
+.fl-center-y
+  align-items: center
+  align-content: center
+
+.fl-wrap
+  flex-wrap: wrap
+
+///////////////////
+// width, height //
+///////////////////
+.w-full
+  width: 100%
+
+for i in 1..20
+  .w-{i * 50}
+    width: i * 50px
+
+  .w-max-{i * 50}
+    max-width: i * 50px
+
+  .h-{i * 50}
+    height: i * 50px
+    
+  .h-max-{i * 50}
+    max-height: i * 50px
+
+/////////////////////
+// margin, padding //
+/////////////////////
+.m-auto
+  margin: auto
+
+.m-5
+  margin: 5px
+  
+.p-5
+  padding: 5px
+
+for i in 1..10
+  .m-{i * 10}
+    margin: i * 10px
+
+  .m-v-{i * 10}
+    margin-top: i * 10px
+    margin-bottom: i * 10px
+
+  .m-h-{i * 10}
+    margin-left: i * 10px
+    margin-right: i * 10px
+
+  .m-l-{i * 10}
+    margin-left: i * 10px
+
+  .m-r-{i * 10}
+    margin-right: i * 10px
+
+  .p-{i * 10}
+    padding: i * 10px
+
+  .p-v-{i * 10}
+    padding-top: i * 10px
+    padding-bottom: i * 10px
+
+////////////
+// shapes //
+////////////
+.circle
+  border-radius: 100%
+  
+//////////
+// text //
+//////////
+.text-center
+  text-align: center
