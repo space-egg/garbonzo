@@ -28,15 +28,34 @@ body
   
 .fixed
   position: fixed
+  
+.block
+  display: block
 
 //////////
 // flex //
 //////////
 .fl
   display: flex
+  
+.fl-row
+  flex-direction: row
+  
+.fl-row-reverse
+  flex-direction: row-reverse
+  
+.fl-column
+  flex-direction: column
+  
+.fl-column-reverse:
+  flex-direction: column-reverse
 
+// THINK ABOUT THIS
 .fl-center
-.fl-center-x
+.fl-center-x:not(.fl-column)
+.fl-center-x:not(.fl-column-reverse)
+.fl-center-y.fl-column
+.fl-center-y.fl-column-reverse
   justify-content: center
 
 .fl-center
@@ -52,19 +71,37 @@ body
 ///////////////////
 .w-full
   width: 100%
-
-for i in 1..20
-  .w-{i * 50}
-    width: i * 50px
-
-  .w-max-{i * 50}
-    max-width: i * 50px
-
-  .h-{i * 50}
-    height: i * 50px
+  
+.w-full-at-1000
+  width: 100%
+  
+.w-half
+  width: 50%
+  
+.w-quarter
+  width: 25%
+  
+.h-full
+  height: 100%
+  
+.h-half
+  height: 50%
+  
+.h-quarter
+  height: 25%
+  
+for i in 10..250
+  .w-{i * 5}
+    width: i * 5px
     
-  .h-max-{i * 50}
-    max-height: i * 50px
+  .w-max-{i * 5}
+    max-width: i * 5px
+    
+  .h-{i * 5}
+    height: i * 5px
+    
+  .h-max-{i * 5}
+    max-height: i * 5px
 
 /////////////////////
 // margin, padding //
@@ -72,36 +109,52 @@ for i in 1..20
 .m-auto
   margin: auto
 
-.m-5
-  margin: 5px
-  
-.p-5
-  padding: 5px
+for i in 0..20
+  .m-{i * 5}
+    margin: i * 5px
 
-for i in 1..10
-  .m-{i * 10}
-    margin: i * 10px
+  .m-v-{i * 5}
+    margin-top: i * 5px
+    margin-bottom: i * 5px
 
-  .m-v-{i * 10}
-    margin-top: i * 10px
-    margin-bottom: i * 10px
+  .m-h-{i * 5}
+    margin-left: i * 5px
+    margin-right: i * 5px
 
-  .m-h-{i * 10}
-    margin-left: i * 10px
-    margin-right: i * 10px
+  .m-l-{i * 5}
+    margin-left: i * 5px
 
-  .m-l-{i * 10}
-    margin-left: i * 10px
+  .m-r-{i * 5}
+    margin-right: i * 5px
+    
+  .m-t-{i * 5}
+    margin-top: i * 5px
+    
+  .m-b-{i * 5}
+    margin-bottom: i * 5px
 
-  .m-r-{i * 10}
-    margin-right: i * 10px
+  .p-{i * 5}
+    padding: i * 5px
 
-  .p-{i * 10}
-    padding: i * 10px
-
-  .p-v-{i * 10}
-    padding-top: i * 10px
-    padding-bottom: i * 10px
+  .p-v-{i * 5}
+    padding-top: i * 5px
+    padding-bottom: i * 5px
+    
+  .p-h-{i * 5}
+    padding-left: i * 5px
+    padding-right: i * 5px
+    
+  .p-t-{i * 5}
+    padding-top: i * 5px
+    
+  .p-b-{i * 5}
+    padding-bottom: i * 5px
+    
+  .p-l-{i * 5}
+    padding-left: i * 5px
+    
+  .p-r-{i * 5}
+    padding-right: i * 5px
 
 ////////////
 // shapes //
