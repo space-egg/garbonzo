@@ -1,0 +1,19 @@
+{
+  "name": "garbonzo",
+  "version": "1.0.0",
+  "description": "The best css framework ever made",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/space-egg/garbonzo.git"
+  },
+  "author": "Micheal Parks / Matt Levenstein / Jonathan Franco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/space-egg/garbonzo/issues"
+  },
+  "homepage": "https://github.com/space-egg/garbonzo#readme"
+}
