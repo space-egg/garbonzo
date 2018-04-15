@@ -1,0 +1,210 @@
+////////////////////
+//// Framework /////
+////////////////////
+*
+  box-sizing: border-box
+  
+body
+  margin: 0
+
+////////////
+// resets //
+////////////
+.reset
+  margin: 0
+  text-decoration: none
+  color: inherit
+  border: 0
+  font-weight: inherit
+
+//////////
+// flex //
+//////////
+
+.fl-row
+.fl-row-nowrap
+.fl-column
+.fl-column-nowrap
+  display: flex
+  align-items: flex-start
+
+.fl-row
+  flex-flow: row wrap
+
+.fl-row-nowrap
+  flex-flow: row
+
+.fl-column
+  flex-flow: column wrap
+
+.fl-column-nowrap
+  flex-flow: column
+
+.fl-row.fl-center
+.fl-column.fl-center
+.fl-row-nowrap.fl-center
+.fl-column-nowrap.fl-center
+  justify-content: center
+  align-items: center
+
+.fl-row.fl-center-x
+.fl-column.fl-center-y
+.fl-row-nowrap.fl-center-x
+.fl-column-nowrap.fl-center-y
+  justify-content: center
+
+.fl-row.fl-center-y
+.fl-column.fl-center-x
+.fl-row-nowrap.fl-center-y
+.fl-column-nowrap.fl-center-x
+  align-items: center
+
+.fl-row
+.fl-row-nowrap
+.fl-column
+.fl-column-nowrap
+  &.fl-fill
+    align-items: stretch
+    & > *
+      flex: 1
+
+.fl-row
+.fl-row-nowrap
+  &.fl-fill-x > *
+    flex: 1
+  &.fl-fill-y
+    align-items: stretch
+
+.fl-column
+.fl-column-nowrap
+  &.fl-fill-x
+    align-items: stretch
+  &.fl-fill-y > *
+    flex: 1
+
+for i in 0..10
+  .fl-{i}
+    flex: i !important
+  
+/////////////////
+// positioning //
+/////////////////
+.absolute
+  position: absolute
+
+.relative
+  position: relative
+  
+.fixed
+  position: fixed
+  
+.block
+  display: block
+
+///////////////////
+// width, height //
+///////////////////
+.w-full
+  width: 100%
+  
+.w-full-at-1000
+  width: 100%
+  
+.w-half
+  width: 50%
+  
+.w-quarter
+  width: 25%
+  
+.h-full
+  height: 100%
+  
+.h-half
+  height: 50%
+  
+.h-quarter
+  height: 25%
+  
+for i in 10..250
+  .w-{i * 5}
+    width: i * 5px
+    
+  .w-max-{i * 5}
+    max-width: i * 5px
+  
+  .w-min-{i * 5}
+    min-width: i * 5px
+    
+  .h-{i * 5}
+    height: i * 5px
+  
+  .h-min{i * 5}
+    min-height: i * 5px
+    
+  .h-max-{i * 5}
+    max-height: i * 5px
+
+/////////////////////
+// margin, padding //
+/////////////////////
+.m-auto
+  margin: auto
+
+for i in 0..20
+  .m-{i * 5}
+    margin: i * 5px !important
+
+  .m-v-{i * 5}
+    margin-top: i * 5px !important
+    margin-bottom: i * 5px !important
+
+  .m-h-{i * 5}
+    margin-left: i * 5px !important
+    margin-right: i * 5px !important
+
+  .m-l-{i * 5}
+    margin-left: i * 5px !important
+
+  .m-r-{i * 5}
+    margin-right: i * 5px !important
+    
+  .m-t-{i * 5}
+    margin-top: i * 5px !important
+    
+  .m-b-{i * 5}
+    margin-bottom: i * 5px !important
+
+  .p-{i * 5}
+    padding: i * 5px !important
+
+  .p-v-{i * 5}
+    padding-top: i * 5px !important
+    padding-bottom: i * 5px !important
+    
+  .p-h-{i * 5}
+    padding-left: i * 5px !important
+    padding-right: i * 5px !important
+    
+  .p-t-{i * 5}
+    padding-top: i * 5px !important
+    
+  .p-b-{i * 5}
+    padding-bottom: i * 5px !important
+    
+  .p-l-{i * 5}
+    padding-left: i * 5px !important
+    
+  .p-r-{i * 5}
+    padding-right: i * 5px !important
+
+////////////
+// shapes //
+////////////
+.circle
+  border-radius: 100%
+  
+//////////
+// text //
+//////////
+.text-center
+  text-align: center

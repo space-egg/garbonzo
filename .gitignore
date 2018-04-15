@@ -1,0 +1,12 @@
+*.log*
+.DS_Store
+fabfile.pyc
+desktop.ini
+
+node_modules/
+app/build/
+
+/app/public/js/*
+/app/public/css/*
+
+app/lib/aws.json

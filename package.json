@@ -4,7 +4,7 @@
   "description": "The best css framework ever made",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "stylus -w garbanzo.styl -o ./public/garbanzo.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/space-egg/garbonzo/issues"
   },
-  "homepage": "https://github.com/space-egg/garbonzo#readme"
+  "homepage": "https://github.com/space-egg/garbonzo#readme",
+  "dependencies": {
+    "stylus": "^0.54.5"
+  }
 }
