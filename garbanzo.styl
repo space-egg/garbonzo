@@ -21,6 +21,9 @@ body
 // flex //
 //////////
 
+.fl
+  display: flex
+
 .fl-row
 .fl-row-nowrap
 .fl-column
@@ -85,6 +88,15 @@ body
 for i in 0..10
   .fl-{i}
     flex: i !important
+    
+.fl-justify-start
+  justify-content: flex-start
+
+.fl-justify-around
+  justify-content: space-around
+
+.fl-content-start
+  align-content: flex-start
   
 /////////////////
 // positioning //
@@ -98,8 +110,8 @@ for i in 0..10
 .fixed
   position: fixed
   
-.block
-  display: block
+/*.block
+  display: block*/
 
 ///////////////////
 // width, height //
@@ -138,11 +150,16 @@ for i in 10..250
   .h-{i * 5}
     height: i * 5px
   
-  .h-min{i * 5}
+  .h-min-{i * 5}
     min-height: i * 5px
     
   .h-max-{i * 5}
     max-height: i * 5px
+
+for i in 100..250
+  .full-if-lt-{i * 5}
+    @media(max-width: i * 5px)
+      width: 100%
 
 /////////////////////
 // margin, padding //
