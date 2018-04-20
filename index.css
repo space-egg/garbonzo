@@ -1,0 +1,99 @@
+html{
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+body {
+  background: #fff;
+  color: #50596C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8rem;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 15px 0px;
+  font-weight: 600;
+  color: #414857;
+}
+
+p, small {
+  margin: 15px 0px;
+  font-weight: 400;
+  color: #50596c;
+}
+
+h1{
+  font-size: 48px;
+  line-height: 58px;
+}
+h2{
+  font-size: 36px;
+  line-height: 46px;
+}
+h3{
+  font-size: 24px;
+  line-height: 34px;
+}
+h4{
+  font-size: 20px;
+  line-height: 30px;
+}
+h5{
+  font-size: 24px;
+  line-height: 34px;
+}
+h6{
+  font-size: 18px;
+  line-height: 28px;
+}
+p{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+header {
+  background: #F8F9FA;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+}
+
+#outer, .inner{
+  border-radius: 4px; 
+}
+
+#flex-layout > *{
+  min-width: 250px;
+}
+
+.code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 8px;
+  background: #F0F1F4;
+  border-radius: 4px;
+}
+
+
+#outer {
+  min-height: 150px;
+  border: 1px solid lightgray;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+.inner {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  background-color: #00cec9;
+  overflow-y: scroll;
+}
