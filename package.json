@@ -2,10 +2,10 @@
   "name": "garbonzo",
   "version": "1.0.0",
   "description": "The best css framework ever made",
-  "homepage": "https://space-egg.github.io/garbonzo",
+  "homepage": "https://github.com/space-egg/garbonzo#readme",
   "main": "index.js",
   "scripts": {
-    "build": "stylus -w garbanzo.styl -o ./public/garbanzo.css",
+    "build": "stylus -w garbanzo.styl -o garbanzo.css",
     "deploy": "gh-pages -d public"
   },
   "repository": {
@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/space-egg/garbonzo/issues"
   },
-  "homepage": "https://github.com/space-egg/garbonzo#readme",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "stylus": "^0.54.5"
