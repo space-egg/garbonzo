@@ -5,7 +5,8 @@
   "homepage": "https://github.com/space-egg/garbonzo#readme",
   "main": "index.js",
   "scripts": {
-    "build": "stylus -w garbanzo.styl -o garbanzo.css",
+    "dev": "stylus -w garbanzo.styl -o garbanzo.css",
+    "build": "stylus -c garbanzo.styl -o garbanzo.css",
     "deploy": "gh-pages -d public"
   },
   "repository": {

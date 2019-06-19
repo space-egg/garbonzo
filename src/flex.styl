@@ -1,0 +1,71 @@
+.disp-block
+  display: block
+
+.disp-inline-block
+  display: inline-block
+
+.disp-none
+  display: none
+
+.fl
+  display: flex
+
+for i in 0..10
+  .fl-{i}
+    flex: i 
+
+// flex direction
+.fl-row
+  flex-direction: row
+.fl-row-reverse
+  flex-direction: row-reverse
+.fl-column
+  flex-direction: column
+.fl-column-reverse
+  flex-direction: column-reverse
+
+// flex wrap
+.fl-wrap
+  flex-wrap: wrap
+
+// justify content
+.fl-justify-center
+  justify-content: center
+.fl-justify-start
+  justify-content: flex-start
+.fl-justify-end
+  justify-content: flex-end
+.fl-justify-center
+  justify-content: center
+.fl-justify-between
+  justify-content: space-between
+.fl-justify-around
+  justify-content: space-around
+.fl-justify-evenly
+  justify-content: space-evenly
+
+// align items
+.fl-items-start
+  align-items: flex-start
+.fl-items-end
+  align-items: flex-end
+.fl-items-center
+  align-items: center
+.fl-items-stretch
+  align-items: stretch
+.fl-items-baseline
+  align-items: baseline
+
+// align content
+.fl-content-start
+  align-content: flex-start
+.fl-content-end
+  align-content: flex-end
+.fl-content-center
+  align-content: center
+.fl-content-stretch
+  align-content: stretch
+.fl-content-around
+  align-content: space-around
+.fl-content-between
+  align-content: space-between

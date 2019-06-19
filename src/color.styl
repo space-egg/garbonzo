@@ -1,0 +1,36 @@
+:root
+  --red: #f44336
+  --pink: #E91E63
+  --purple: #9C27B0
+  --deep-purple: #673AB7
+  --indigo: #3F51B5
+  --blue: #2196F3
+  --light-blue: #03A9F4
+  --cyan: #00BCD4
+  --teal: #009688
+  --green: #4CAF50
+  --light-green: #8BC34A
+  --lime: #CDDC39
+  --yellow: #FFEB3B
+  --amber: #FFC107
+  --orange: #FF9800
+  --deep-orange: #FF5722
+  --brown: #795548
+  --grey: #9E9E9E
+  --blue-grey: #607D8B
+
+colors = 'red' 'pink' 'purple' 'deep-purple' 'indigo' 'blue' 'light-blue' 'cyan' 'teal' 'green' 'light-green' 'lime' 'yellow' 'amber' 'orange' 'deep-orange' 'brown' 'grey' 'blue-grey'
+
+for c in colors
+  .{c}
+    color: s('var(--%s)', unquote(c))
+
+  for i in 1..9
+    .{c}-{i * 100}
+      color: s('var(--%s-%s)', unquote(c), i * 100)
+
+  .bg-{c}
+    background-color: s('var(--%s)', unquote(c))
+
+  .b-c-{c}
+    border-color: s('var(--%s)', unquote(c))

@@ -1,0 +1,118 @@
+.overflow-hidden
+  overflow: hidden
+.overflow-x-hidden
+  overflow-x: hidden
+.overflow-y-hidden
+  overflow-y: hidden
+
+.v-full
+  width: 100vw
+  height: 100vh
+.v-w-full
+  width: 100vw
+.v-h-full
+  height: 100vh
+
+.full
+  width: 100%
+  height: 100%
+.half
+  width: 50%
+  height: 50%
+
+.w-full
+  width: 100%
+.h-full
+  height: 100%
+
+.w-half
+  width: 50%
+.h-half
+  height: 50%
+
+for i in 1..300
+  .w-{i * 5}
+    width: i * 5px
+  .w-max-{i * 5}
+    max-width: i * 5px
+  .w-min-{i * 5}
+    min-width: i * 5px
+  .h-{i * 5}
+    height: i * 5px
+  .h-min-{i * 5}
+    min-height: i * 5px
+  .h-max-{i * 5}
+    max-height: i * 5px
+
+for i in 60..260
+  .w-full-lt-{i * 5}
+    @media(max-width: i * 5px)
+      width: 100%
+
+for i in 1..4
+  .m-{i}
+    margin: i * 1px
+  .m-v-{i}
+    margin: i * 1px 0
+  .m-h-{i}
+    margin: 0 i * 1px
+  .m-t-{i}
+    margin-top: i * 1px
+  .m-b-{i}
+    margin-bottom: i * 1px
+  .m-l-{i}
+    margin-left: i * 1px
+  .m-r-{i}
+    margin-right: i * 1px
+
+  .p-{i}
+    padding: i * 1px
+  .p-v-{i * 1}
+    padding-top: i * 1px
+    padding-bottom: i * 1px
+  .p-h-{i * 1}
+    padding-left: i * 1px
+    padding-right: i * 1px
+  .p-t-{i * 1}
+    padding-top: i * 1px
+  .p-b-{i * 1}
+    padding-bottom: i * 1px
+  .p-l-{i * 1}
+    padding-left: i * 1px
+  .p-r-{i * 1}
+    padding-right: i * 1px
+
+for i in 0..40
+  .m-{i * 5}
+    margin: i * 5px
+  .m-v-{i * 5}
+    margin-top: i * 5px
+    margin-bottom: i * 5px
+  .m-h-{i * 5}
+    margin-left: i * 5px
+    margin-right: i * 5px
+  .m-l-{i * 5}
+    margin-left: i * 5px
+  .m-r-{i * 5}
+    margin-right: i * 5px
+  .m-t-{i * 5}
+    margin-top: i * 5px
+  .m-b-{i * 5}
+    margin-bottom: i * 5px
+
+  .p-{i * 5}
+    padding: i * 5px
+  .p-v-{i * 5}
+    padding-top: i * 5px
+    padding-bottom: i * 5px
+  .p-h-{i * 5}
+    padding-left: i * 5px
+    padding-right: i * 5px
+  .p-t-{i * 5}
+    padding-top: i * 5px
+  .p-b-{i * 5}
+    padding-bottom: i * 5px
+  .p-l-{i * 5}
+    padding-left: i * 5px
+  .p-r-{i * 5}
+    padding-right: i * 5px

@@ -1,0 +1,30 @@
+.user-select-none
+  user-select: none
+
+.pointer-events-none
+  pointer-events: none
+
+for i in 1..10
+  .transition-{i}
+    transition-duration: i * 100ms
+
+  .transition-delay-{i}
+    transition-delay: i * 100ms
+
+.transition-ease-in-2
+  transition-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530)
+
+.transition-ease-in-4
+  transition-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220)
+
+.transition-ease-out-2
+  transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940)
+
+.transition-ease-out-4
+  transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000)
+
+.transition-ease-in-out-2
+  transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955)
+
+.transition-ease-in-out-4
+  transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000)
